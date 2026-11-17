@@ -1,0 +1,16 @@
+services:
+  dashboard:
+    build: .
+    container_name: dashboard-demografico-longevidade
+    ports:
+      # 8508 no host: 8501 e do painel demografico, que segue no ar.
+      - "127.0.0.1:8508:8501"
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data:ro
+    healthcheck:
+      test: [CMD, curl, -f, http://localhost:8501/cenarios/demografico-longevidade/_stcore/health]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
