@@ -16,9 +16,20 @@ O painel sempre diz qual é qual. Atenção: **o ano atual já é projeção.**
 
 Este painel **nasceu como uma cópia** do [Painel Demográfico — Brasil](https://github.com/Dev-Cenarios/painel-demografico-brasil). Os dois andaram juntos até a chegada do mapa novo (em pydeck). Daí em diante, **cada um seguiu o seu caminho**.
 
+Hoje eles têm assuntos diferentes, e um não repete o outro:
+
+| | Este painel (Envelhecimento) | [Demográfico](https://github.com/Dev-Cenarios/painel-demografico-brasil) |
+|---|---|---|
+| **Assunto** | as pessoas com **60 anos ou mais** | a **população inteira**: estrutura por idade, crescimento, densidade, nascimentos e esperança de vida |
+| **Lugar** | estados | estados e municípios |
+| **Período** | 2000 a 2070 (projeções) | 2010 a 2025 |
+| **Visual** | o do Observatório da Longevidade | o dos painéis Cenários (o mesmo dos de tuberculose e hanseníase) |
+
+A % de 60+ e o índice de envelhecimento ficam só aqui. Em novembro de 2026, o Demográfico deixou de mostrá-los.
+
 Os dois continuam no ar, cada um no seu endereço e na sua porta.
 
-**O que já é diferente neste:**
+**O que é diferente neste:**
 - endereço `/cenarios/demografico-longevidade`, porta 8508 no servidor e container `dashboard-demografico-longevidade`;
 - o nome que aparece na tela;
 - **a identidade visual**: a marca, a paleta roxa e as cores do mapa vêm do [longevidade.unb.br](https://longevidade.unb.br). Veja [Identidade visual](docs/identidade.md);
